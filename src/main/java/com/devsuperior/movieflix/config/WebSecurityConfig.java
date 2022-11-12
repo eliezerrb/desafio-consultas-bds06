@@ -15,7 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-// @EnableGlobalMethodSecurity(prePostEnabled = true) - configurar o projeto para aceitar autorização por método endpoint 
+// @EnableGlobalMethodSecurity(prePostEnabled = true) - configurar o projeto para aceitar autorização por método endpoint,  permitir @PreAuthorize
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
