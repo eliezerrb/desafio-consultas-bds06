@@ -16,8 +16,6 @@ import com.devsuperior.movieflix.repositories.GenreRepository;
 import com.devsuperior.movieflix.repositories.MovieRepository;
 import com.devsuperior.movieflix.services.exceptions.ResourceNotFoundException;
 
-import net.bytebuddy.asm.Advice.OffsetMapping.Sort;
-
 @Service
 public class MovieService {
 	

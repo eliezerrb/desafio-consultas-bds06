@@ -58,13 +58,10 @@ public class ReviewService {
 
 			return new ReviewDTO(entity);
 
-		} catch (DataIntegrityViolationException e) {
+		} 
+		catch (DataIntegrityViolationException e) {
 			throw new DatabaseException("Integrity violation - Id movie not found " + dto.getMovieId());
-		}
-		
-
+		} 
 	}
-	
-	
 
 }
